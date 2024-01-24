@@ -6,7 +6,7 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 21:33:58 by houmanso          #+#    #+#             */
-/*   Updated: 2024/01/24 12:51:37 by houmanso         ###   ########.fr       */
+/*   Updated: 2024/01/24 19:00:00 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,15 @@ void	Span::addNumber(int n)
 	arr.push_back(n);
 }
 
-void	Span::addNumbers(unsigned int n)
+void	Span::generate(unsigned int n)
 {
+	if (n >= max)
+		n = max;
+	arr.resize(n);
 	std::srand(std::time(0));
-	for (size_t i = 0; i < max && i < n; i++)
-		addNumber(std::rand());
+	std::generate_n(arr.begin(), n, std::rand);
 }
+
 
 unsigned int Span::longestSpan(void)
 {

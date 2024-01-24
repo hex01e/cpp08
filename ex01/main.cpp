@@ -6,13 +6,13 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 19:07:48 by houmanso          #+#    #+#             */
-/*   Updated: 2024/01/24 12:52:07 by houmanso         ###   ########.fr       */
+/*   Updated: 2024/01/24 19:02:06 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Span.hpp"
 
-#define NN 20000
+#define NN 10001
 
 int	main(void)
 {
@@ -21,7 +21,7 @@ int	main(void)
 
 	try
 	{
-		s.addNumbers(NN);
+		s.generate(NN);
 		std::cout << "Longest span is : " << s.longestSpan() << std::endl;
 		std::cout << "Shortgest span is : " << s.shortestSpan() << std::endl;
 	}

@@ -6,7 +6,7 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 21:33:39 by houmanso          #+#    #+#             */
-/*   Updated: 2024/01/24 12:49:41 by houmanso         ###   ########.fr       */
+/*   Updated: 2024/01/24 18:53:34 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class Span
 		Span&	operator=(const Span& cpy);
 
 		void			addNumber(int n);
-		void			addNumbers(unsigned int n);
+		void			generate(unsigned int n);
 		unsigned int	longestSpan(void);
 		unsigned int	shortestSpan(void);
 
